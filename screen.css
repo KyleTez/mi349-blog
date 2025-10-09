@@ -53,6 +53,7 @@ nav {
 article {
     background-color: darkolivegreen;
     padding: 5px;
+    border: 3px solid;
     margin: 5px;
     border-radius: 5px;
 }
@@ -67,6 +68,7 @@ article:nth-of-type(2) {
 p {
     padding: 5px;
     margin: 5px;
+    border: 1px dashed;
     background-color: burlywood;
 }
 .time {
@@ -74,8 +76,9 @@ p {
 }
 address {
     padding: 5px;
-    margin: 0px 5px;
+    margin: 2px 5px;
     background-color: burlywood;
+    border: 1px dashed;
 }
 h2 {
     margin: 5px;
@@ -84,10 +87,20 @@ h2 {
     text-align: center;
     border: 3px solid;
 }
+h3 {
+    margin: 5px auto;
+    padding: 5px;
+    background: rgb(196, 145, 94);
+    text-align: center;
+    border: 3px solid;
+    width: 700px;
+    font-size: 25px;
+}
 #newsletter {
     background-color: darkolivegreen;
     padding: 5px;
     margin: auto;
+    border: 3px solid;
     border-radius: 8px;
     width: 500px;
 }
@@ -107,7 +120,49 @@ img {
     margin: auto;
     width: 50%;
 }
+#aboutpic{
+    float:right;
+    margin-left: 20px;
+    width: 50%;
+    height: 50%;
+}
 button {
     padding: 5px;
     font-size: medium;
+}
+#about {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.abouttitle {
+    width: fit-content;
+    font-size: 30px;
+    margin: 0 auto;
+}
+.aboutcontent {
+    text-align: center;
+    width: 1100px;
+    margin: 10px auto;
+}
+#funthings {
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 5px auto;
+    font-size: 20px;
+    border: 1px dotted;
+    background-color: white;
+}
+#picp {
+    width: 600px;
+    margin: 5px auto;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+    width: fit-content;
 }
