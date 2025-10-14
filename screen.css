@@ -9,11 +9,14 @@ header {
     position:-webkit-sticky;
     position: sticky;
     top: 0;
-    margin: 5px auto 5px auto;
+    margin: 5px auto;
     padding: 5px;
     border-radius: 8px;
     border: 2px solid;
-    width: fit-content;
+    width: 100%;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
 }
 h1 {
     padding: 5px;
@@ -48,7 +51,8 @@ nav {
 }
 #blogs {
     display: flex;
-    margin: 5px;
+    margin: 5px auto;
+    max-width: 1300px;
 }
 article {
     background-color: darkolivegreen;
@@ -118,13 +122,11 @@ table, th, td {
 img {
     display: block;
     margin: auto;
-    width: 50%;
+    width: 100%;
 }
 #aboutpic{
     float:right;
-    margin-left: 20px;
-    width: 50%;
-    height: 50%;
+    width: 100%;
 }
 button {
     padding: 5px;
@@ -142,8 +144,11 @@ button {
 }
 .aboutcontent {
     text-align: center;
-    width: 1100px;
+    width: fit-content;
+    max-width: 1100px;
     margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 #funthings {
     display: inline-block;
