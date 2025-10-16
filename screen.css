@@ -13,7 +13,6 @@ header {
     padding: 5px;
     border-radius: 8px;
     border: 2px solid;
-    width: 100%;
     max-width: fit-content;
     display: flex;
     flex-direction: column;
@@ -103,7 +102,7 @@ h3 {
 #newsletter {
     background-color: darkolivegreen;
     padding: 5px;
-    margin: auto;
+    margin: 5px auto;
     border: 3px solid;
     border-radius: 8px;
     width: 500px;
@@ -125,12 +124,15 @@ img {
     width: 100%;
 }
 #aboutpic{
-    float:right;
-    width: 100%;
+    float: right;
+    width: 75%;
+    margin-left: 5px;
 }
 button {
     padding: 5px;
     font-size: medium;
+    display: block;
+    margin: 0 auto;
 }
 #about {
     display: flex;
@@ -158,11 +160,11 @@ button {
     border: 1px dotted;
     background-color: white;
 }
-#picp {
-    width: 600px;
+#travel {
+    max-width: 600px;
     margin: 5px auto;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     background-color: white;
 }
 #contact {
@@ -170,4 +172,120 @@ button {
     flex-direction: column;
     margin: 5px auto;
     width: fit-content;
+}
+@media screen and (max-width: 870px) {
+    body {
+        background-color: grey;
+    }
+    header {
+        background-color: rgb(103, 172, 172);
+        padding: 2px;
+    }
+    h1 {
+        background-color: darkseagreen;
+        max-width: 550px;
+        font-size: 35px;
+        margin: 2px auto;
+        padding: 2px;
+    }
+    h2 {
+        background-color: darkseagreen;
+    }
+    nav {
+        background-color: white;
+        font-size: 18px;
+        margin: 2px auto;
+        padding: 2px;
+    }
+    #leader {
+        background-color: white;
+        font-size: 17px;
+        margin: 2px auto;
+        padding: 2px;
+    }
+    article {
+        background-color: rgb(103, 172, 172);
+    }
+    p {
+        background-color: white;
+        font-size: 18px;
+    }
+    address {
+        background-color: white;
+        font-size: 18px;
+    }
+    #newsletter {
+        background-color: rgb(103, 172, 172);
+        margin: 2px auto;
+        padding: 2px;
+    }
+    .newslettertext {
+        font-size: 17px;
+        margin: 2px auto;
+        padding: 2px;
+    }
+    h3 {
+        background-color: darkseagreen;
+        max-width: 500px;
+    }
+}
+@media screen and (max-width: 615px) {
+    body {
+        background-color:rgb(103, 49, 103)
+    }
+    header {
+        background-color:indianred;
+        padding: 2px;
+    }
+    h1 {
+        background-color:antiquewhite;
+        max-width: 300px;
+        font-size: 35px;
+        margin: 2px auto;
+        padding: 2px;
+    }
+    h2 {
+        background-color: antiquewhite;
+        font-size: 20px;
+    }
+    nav {
+        background-color: cornsilk;
+        font-size: 18px;
+        margin: 2px auto;
+        padding: 2px;
+        max-width: fit-content;
+    }
+    #leader {
+        background-color: cornsilk;
+        font-size: 19px;
+        margin: 2px auto;
+        padding: 2px;
+        max-width: fit-content;
+    }
+    article {
+        background-color: indianred;
+    }
+    p {
+        background-color:cornsilk;
+        font-size: 18px;
+    }
+    address {
+        background-color: cornsilk;
+        font-size: 19px;
+    }
+    #newsletter {
+        background-color: indianred;
+        margin: 2px auto;
+        padding: 2px;
+        max-width: 340px;
+    }
+    .newslettertext {
+        font-size: 17px;
+        margin: 2px auto;
+        padding: 2px;
+    }
+    h3 {
+        background-color: antiquewhite;
+        max-width: 340px;
+    }
 }
